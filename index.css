@@ -1,0 +1,109 @@
+body{
+	font-family: Verdana;
+	background-color: rgb(20, 20, 20);
+	color: white;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#instruction{
+	font-size: 30px;
+	position: relative;
+	height: 100vh;
+}
+
+#instruction-1{
+	position: absolute;
+	top: 20%;
+	left: 5%;
+}
+
+#instruction-2{
+	position: absolute;
+	bottom: 20%;
+	right: 5%;
+	text-align: right;
+}
+
+#counter{
+	display: none;
+	font-size: 60px;
+	height: 100vh;
+	position: relative;
+}
+
+#counter-value{
+	width: 70px;
+	height: 70px;
+	text-align: center;
+	line-height: 70px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@keyframes drop{
+	from{
+		width: 70px;
+		height: 70px;
+		border-color: rgba(255, 255, 255, 1);
+	}
+	to{
+		width: 800px;
+		height: 800px;
+		border-color: rgba(255, 255, 255, 0);
+	}
+}
+
+#counter-animation{
+	width: 70px;
+	height: 70px;
+	text-align: center;
+	line-height: 70px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 1px solid white;
+	border-radius: 500px;
+	animation-name: drop;
+	animation-duration: 1.5s;
+	animation-fill-mode: forwards;
+}
+
+#result{
+	display: none;
+	position: relative;
+	height: 100vh;
+	text-align: center;
+}
+
+#result-statement{
+	font-size: 30px;
+	margin-top: 30px;
+}
+
+#result-value{
+	font-size: 60px;
+}
+
+#result-unit{
+	position: absolute;
+	top: 78px;
+}
+
+#result-chart{
+	margin-top: 20px;
+}
+
+#result-redo{
+	background-color: rgb(60, 60, 60);
+	padding: 10px;
+	font-size: 20px;
+	width: 300px;
+	margin: auto;
+	margin-top: 20px;
+	cursor: pointer;
+}

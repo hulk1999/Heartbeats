@@ -1,9 +1,38 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>HUlk</title>
+	<title>Heartbeats</title>
+	<link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="jquery-3.4.1.min.js"></script>
+	<script src="index.js"></script>
 </head>
+
 <body>
-	Hu;l
+	
+	<div id="instruction">
+		<div id="instruction-1">
+			Relax and feel your heartbeats.<br>
+			It can be found at your wrist, neck or right on your chest.
+		</div>
+		<div id="instruction-2">
+			When ready, tap the screen everytime you feel the beat.<br>
+			The result will be shown after 10 taps.
+		</div>
+	</div>
+
+	<div id="counter">
+		<div id="counter-value"></div>
+		<div id="counter-animation"></div>
+	</div>
+
+	<div id="result">
+		<div id="result-statement">Your heart beats at rate</div>
+		<span id="result-value"></span><span id="result-unit">(beats per minute)</span><br>
+		<img id="result-chart" src="assets/chart.jpg">
+		<div id="result-redo">REDO THE TEST</div>
+	</div>
+
 </body>
 </html>
